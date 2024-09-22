@@ -7,11 +7,12 @@
     <title>Donate Bangladesh</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <nav class="navbar bg-[#F9F7F3] z-50 shadow-sm pb-10 sticky top-0">
+    <nav class="navbar bg-[#F9F7F3] z-50 shadow-sm pb-10  top-0">
         <div class="container mx-auto flex items-center justify-between py-3">
             <div class="flex-none">
                 <a href="#" class="btn bg-lime-500 normal-case text-xl">Blog</a>
@@ -23,13 +24,13 @@
             <div class="flex-none flex items-center space-x-2">
                 <span class="inline-flex items-center">
                     <img src="img/coin.png" alt="coin icon" class="w-6 h-6">
-                    <span class="ml-1 text-xl font-medium text-[#111111]">5500</span><span
+                    <span id="nav_amount" class="ml-1 text-xl font-medium text-[#111111]">5500</span><span
                         class="ml-1 text-xl font-medium text-[#111111]">BDT</span>
                 </span>
             </div>
         </div>
     </nav>
-    <div class=" sticky top-20 z-10 pt-16 pb-4 bg-white">
+    <div class="  top-20 z-10 pt-16 pb-4 bg-white">
         <div class="container mx-auto flex items-center justify-center py-3 gap-4">
             <a href="#" class="btn px-4 py-3 bg-lime-500 text-[#000]">Donation</a>
             <a href="#" class="btn px-4 py-3 btn-outline border-slate-400">History</a>
@@ -44,7 +45,8 @@
                     <div class="card-body md:py-0 md:pr-0">
                         <span class="inline-flex justify-center items-center bg-gray-50 w-28  py-1 rounded-md">
                             <img src="img/coin.png" alt="coin icon" class="w-6 h-6">
-                            <span class="ml-1 text-xs font-medium text-[#111111]">5500</span><span
+                            <span id="noakhali_donate_amount"
+                                class="ml-1 text-xs font-medium text-[#111111]">00</span><span
                                 class="ml-1 text-xs font-medium text-[#111111]">BDT</span>
                         </span>
                         <h4 class="text-[#111111] font-semibold text-xl"> Donate for Flood at Noakhali, Bangladesh</h4>
@@ -58,10 +60,11 @@
                             extreme hardship. Together, we can make a lasting difference in the lives of those affected
                             by this disaster.
                         </p>
-                        <input type="number" placeholder="Write Donation Amount"
+                        <input id="noakhali_donate_input" type="number" placeholder="Write Donation Amount"
                             class="input input-bordered w-full mb-1" required />
                         <div class="card-actions justify-end">
-                            <button class="btn  w-full bg-lime-500 border-none">Donate Now</button>
+                            <button id="noakhali_donate_btn" class="btn  w-full bg-lime-500 border-none">Donate
+                                Now</button>
                         </div>
                     </div>
                 </div>
@@ -125,7 +128,14 @@
                 </div>
             </div>
         </section>
-
+        <!-- Modal -->
+        <div id="success" class="fixed inset-0  mt-20 mx-96 bg-opacity-50 ">
+            <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                <h2 class="text-2xl font-semibold text-black-600 mb-4">Congrats </h2>
+                <p class="mb-4">Thank you for your generous contribution.</p>
+                <button id="close" class="btn bg-lime-500 border-none">Close</button>
+            </div>
+        </div>
         <!-- History part -->
         <section id="history hidden">
 
@@ -133,7 +143,9 @@
     </main>
     <!-- footer -->
     <div class="h-20 bg-[#F9F7F3] mt-16"></div>
-
+    <!-- script file -->
+    <script src="js/utilities.js"></script>
+    <script src="js/donate.js"></script>
 </body>
 
 </html>
