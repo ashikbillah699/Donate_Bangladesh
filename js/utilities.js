@@ -5,3 +5,4 @@ function getInputs(id){
 function getAmount(id){
     return parseFloat(document.getElementById(id).innerText);
 }
+

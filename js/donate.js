@@ -96,7 +96,7 @@ document.getElementById('injured_donate_btn').addEventListener('click', function
     historyItem.className = 'p-8 border rounded-md container mx-auto mt-4';
     historyItem.innerHTML = `
     <h4 class="text-[#111111] font-semibold text-xl">${noakhaliDonateInput} dolar Donate for Flood at Noakhali, Bangladesh</h4>
-    <small>${new Date().toString()}</small>
+    <small class="bg-gray-400">${new Date().toString()}</small>
 
     `
     const historyContainer = document.getElementById('history_container');
@@ -134,9 +134,4 @@ donation.addEventListener('click', function () {
 // Blog page
 document.getElementById('blog').addEventListener('click', function(){
     window.location.href = 'blog.html'
-})
-
-// home page
-document.getElementById('home_page').addEventListener('click', function(){
-    window.location.href = 'index.html'
 })

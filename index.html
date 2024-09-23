@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="navbar bg-[#F9F7F3] z-50 shadow-sm pb-10  top-0">
+    <nav class="navbar bg-[#F9F7F3] sticky z-50 shadow-sm pb-10  top-0">
         <div class="container mx-auto flex items-center justify-between py-3">
             <div class="flex-none">
                 <a href="#" id="blog" class="btn bg-lime-500 normal-case text-xl">Blog</a>
@@ -30,7 +30,7 @@
             </div>
         </div>
     </nav>
-    <div class="  top-20 z-10 pt-16 pb-4 bg-white">
+    <div class="sticky top-20 z-10 pt-16 pb-4 bg-white">
         <div class="container mx-auto flex items-center justify-center py-3 gap-4">
             <a id="donation" href="#" class="btn px-4 py-3 bg-lime-500 text-[#000]">Donation</a>
             <a id="history" href="#" class="btn px-4 py-3  border-none">History</a>
@@ -129,7 +129,7 @@
             </div>
         </section>
         <!-- Modal -->
-        <div id="success" class="fixed inset-0  mt-20 w-96 mx-auto rounded-md bg-opacity-100 hidden">
+        <div id="success" class="fixed z-50 inset-0  mt-20 w-96 mx-auto rounded-md drop-shadow-2xl hidden">
             <div class="bg-white p-8 rounded-lg shadow-lg text-center">
                 <h2 class="text-2xl font-semibold text-black-600 mb-4">Congrates! </h2>
                 <img class="mx-auto" src="img/coin.png" alt="">
@@ -142,7 +142,7 @@
         </section>
     </main>
     <!-- footer -->
-    <div class="mt-10"></div>
+    <div class="mt-10 h-28 bg-[#F9F7F3]"></div>
     <!-- script file -->
     <script src="js/utilities.js"></script>
     <script src="js/donate.js"></script>
