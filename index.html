@@ -32,12 +32,12 @@
     </nav>
     <div class="  top-20 z-10 pt-16 pb-4 bg-white">
         <div class="container mx-auto flex items-center justify-center py-3 gap-4">
-            <a href="#" class="btn px-4 py-3 bg-lime-500 text-[#000]">Donation</a>
-            <a href="#" class="btn px-4 py-3 btn-outline border-slate-400">History</a>
+            <a id="donation" href="#" class="btn px-4 py-3 bg-lime-500 text-[#000]">Donation</a>
+            <a id="history" href="#" class="btn px-4 py-3  border-none">History</a>
         </div>
     </div>
     <main>
-        <section class="container mx-auto">
+        <section id="donate_section" class="container mx-auto">
             <!-- Donate for Flood at Noakhali, Bangladesh -->
             <div class="border p-8 rounded-xl mb-8">
                 <div class="card card-side bg-base-100 flex flex-col md:flex-row ">
@@ -76,7 +76,7 @@
                     <div class="card-body md:py-0 md:pr-0">
                         <span class="inline-flex justify-center items-center bg-gray-50 w-28  py-1 rounded-md">
                             <img src="img/coin.png" alt="coin icon" class="w-6 h-6">
-                            <span class="ml-1 text-xs font-medium text-[#111111]">5500</span><span
+                            <span id="feni_donate_amount" class="ml-1 text-xs font-medium text-[#111111]">00</span><span
                                 class="ml-1 text-xs font-medium text-[#111111]">BDT</span>
                         </span>
                         <h4 class="text-[#111111] font-semibold text-xl"> Donate for Flood Relief in Feni,Bangladesh
@@ -90,10 +90,10 @@
                             restoring hope and comfort to those facing unimaginable hardships. Together, we can make a
                             significant impact on the lives of those affected by this disaster.
                         </p>
-                        <input type="number" placeholder="Write Donation Amount"
+                        <input id="feni_donate_input" type="number" placeholder="Write Donation Amount"
                             class="input input-bordered w-full mb-1" required />
                         <div class="card-actions justify-end">
-                            <button class="btn  w-full bg-lime-500 border-none">Donate Now</button>
+                            <button id="feni_donate_btn" class="btn  w-full bg-lime-500 border-none">Donate Now</button>
                         </div>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
                     <div class="card-body md:py-0 md:pr-0">
                         <span class="inline-flex justify-center items-center bg-gray-50 w-28  py-1 rounded-md">
                             <img src="img/coin.png" alt="coin icon" class="w-6 h-6">
-                            <span class="ml-1 text-xs font-medium text-[#111111]">5500</span><span
+                            <span id="injured_donate_amount" class="ml-1 text-xs font-medium text-[#111111]">00</span><span
                                 class="ml-1 text-xs font-medium text-[#111111]">BDT</span>
                         </span>
                         <h4 class="text-[#111111] font-semibold text-xl">Aid for Injured in the Quota Movement</h4>
@@ -119,30 +119,30 @@
                             they receive the care they deserve. Together, we can foster a sense of solidarity and
                             support for those who have bravely voiced their demands.
                         </p>
-                        <input type="number" placeholder="Write Donation Amount"
+                        <input id="injured_donate_input" type="number" placeholder="Write Donation Amount"
                             class="input input-bordered w-full mb-1" required />
                         <div class="card-actions justify-end">
-                            <button class="btn  w-full bg-lime-500 border-none">Donate Now</button>
+                            <button id="injured_donate_btn" class="btn  w-full bg-lime-500 border-none">Donate Now</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Modal -->
-        <div id="success" class="fixed inset-0  mt-20 mx-96 bg-opacity-50 ">
+        <div id="success" class="fixed inset-0  mt-20 w-96 mx-auto rounded-md bg-opacity-100 hidden">
             <div class="bg-white p-8 rounded-lg shadow-lg text-center">
-                <h2 class="text-2xl font-semibold text-black-600 mb-4">Congrats </h2>
-                <p class="mb-4">Thank you for your generous contribution.</p>
+                <h2 class="text-2xl font-semibold text-black-600 mb-4">Congrates! </h2>
+                <img class="mx-auto" src="img/coin.png" alt="">
+                <p class="mb-4">You have donated for humankind <br> <span class="  text-[#111111] font-semibold text-xl">Successfully</span></p>
                 <button id="close" class="btn bg-lime-500 border-none">Close</button>
             </div>
         </div>
         <!-- History part -->
-        <section id="history hidden">
-
+        <section class="hidden" id="history_container">
         </section>
     </main>
     <!-- footer -->
-    <div class="h-20 bg-[#F9F7F3] mt-16"></div>
+    <div class="mt-10"></div>
     <!-- script file -->
     <script src="js/utilities.js"></script>
     <script src="js/donate.js"></script>
