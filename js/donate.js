@@ -130,3 +130,13 @@ donation.addEventListener('click', function () {
 
     document.getElementById('history_container').classList.add('hidden')
 })
+
+// Blog page
+document.getElementById('blog').addEventListener('click', function(){
+    window.location.href = 'blog.html'
+})
+
+// home page
+document.getElementById('home_page').addEventListener('click', function(){
+    window.location.href = 'index.html'
+})
