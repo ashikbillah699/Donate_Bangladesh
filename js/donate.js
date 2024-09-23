@@ -76,16 +76,6 @@ document.getElementById('injured_donate_btn').addEventListener('click', function
 
         document.getElementById('success').classList.remove('hidden');
 
-        // history
-    const historyItem = document.createElement('div');
-    historyItem.className = 'p-8 border rounded-md container mx-auto mt-4';
-    historyItem.innerHTML = `
-    <h4 class="text-[#111111] font-semibold text-xl">${injuredDonateInput} dolar Aid for Injured in the Quota Movement</h4>
-    <small>${new Date().toString()}</small>
-
-    `
-    const historyContainer = document.getElementById('history_container');
-    historyContainer.insertBefore(historyItem, historyContainer.firstChild);
     }
     else {
         alert('Please enter a valid donation amount.')
@@ -96,7 +86,7 @@ document.getElementById('injured_donate_btn').addEventListener('click', function
     historyItem.className = 'p-8 border rounded-md container mx-auto mt-4';
     historyItem.innerHTML = `
     <h4 class="text-[#111111] font-semibold text-xl">${noakhaliDonateInput} dolar Donate for Flood at Noakhali, Bangladesh</h4>
-    <small class="bg-gray-400">${new Date().toString()}</small>
+    <small">${new Date().toString()}</small>
 
     `
     const historyContainer = document.getElementById('history_container');
