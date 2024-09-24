@@ -12,12 +12,8 @@ document.getElementById('noakhali_donate_btn').addEventListener('click', functio
         document.getElementById('nav_amount').innerText = newNavAmount.toFixed(2);
 
         document.getElementById('success').classList.remove('hidden');
-    }
-    else {
-        alert('Please enter a valid donation amount.')
-    }
 
-    // history
+          // history
     const historyItem = document.createElement('div');
     historyItem.className = 'p-8 border rounded-md container mx-auto mt-4';
     historyItem.innerHTML = `
@@ -27,6 +23,12 @@ document.getElementById('noakhali_donate_btn').addEventListener('click', functio
     `
     const historyContainer = document.getElementById('history_container');
     historyContainer.insertBefore(historyItem, historyContainer.firstChild);
+    }
+    else {
+        alert('Please enter a valid donation amount.')
+    }
+
+  
 })
 
 // Donate for Flood Relief in Feni,Bangladesh
@@ -43,12 +45,8 @@ document.getElementById('feni_donate_btn').addEventListener('click', function ()
         document.getElementById('nav_amount').innerText = newNavAmount.toFixed(2);
 
         document.getElementById('success').classList.remove('hidden');
-    }
-    else {
-        alert('Please enter a valid donation amount.')
-    }
 
-    // history
+        // history
     const historyItem = document.createElement('div');
     historyItem.className = 'p-8 border rounded-md container mx-auto mt-4';
     historyItem.innerHTML = `
@@ -58,6 +56,12 @@ document.getElementById('feni_donate_btn').addEventListener('click', function ()
     `
     const historyContainer = document.getElementById('history_container');
     historyContainer.insertBefore(historyItem, historyContainer.firstChild);
+    }
+    else {
+        alert('Please enter a valid donation amount.')
+    }
+
+  
 
 })
 
