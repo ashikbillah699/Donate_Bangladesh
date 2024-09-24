@@ -1,3 +1,8 @@
 body {
   font-family: "Lexend", sans-serif;
 }
+
+.banner{
+    top: 120px;
+    z-index: 10;
+}
